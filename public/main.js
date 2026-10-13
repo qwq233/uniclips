@@ -2234,28 +2234,28 @@ function revealResults(){
 function calcPayoff(hm, vm){
     if (hm==1 && vm==1){
         
-        payoffCellAAElement.style.backgroundColor = "#28514a";
+        payoffCellAAElement.style.backgroundColor = "#4b4b1e";
         
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueAA;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueAA;  
           
     } else if (hm==1 && vm==2){
         
-        payoffCellABElement.style.backgroundColor = "#28514a";
+        payoffCellABElement.style.backgroundColor = "#4b4b1e";
         
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueAB;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueBA; 
         
     } else if (hm==2 && vm==1){
         
-        payoffCellBAElement.style.backgroundColor = "#28514a";
+        payoffCellBAElement.style.backgroundColor = "#4b4b1e";
         
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueBA;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueAB;
         
     } else if (hm==2 && vm==2){
         
-        payoffCellBBElement.style.backgroundColor = "#28514a";
+        payoffCellBBElement.style.backgroundColor = "#4b4b1e";
         
         strats[h].currentScore = strats[h].currentScore + payoffGrid.valueBB;
         strats[v].currentScore = strats[v].currentScore + payoffGrid.valueBB;
@@ -2290,10 +2290,10 @@ function round(roundNum){
     
     function clearGrid() {
         
-        payoffCellAAElement.style.backgroundColor = "#171d26";
-        payoffCellABElement.style.backgroundColor = "#171d26";
-        payoffCellBAElement.style.backgroundColor = "#171d26";
-        payoffCellBBElement.style.backgroundColor = "#171d26";
+        payoffCellAAElement.style.backgroundColor = "#333333";
+        payoffCellABElement.style.backgroundColor = "#333333";
+        payoffCellBAElement.style.backgroundColor = "#333333";
+        payoffCellBBElement.style.backgroundColor = "#333333";
         
         
         setTimeout(function(){roundLoop();}, 50);

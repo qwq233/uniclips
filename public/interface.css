@@ -909,221 +909,93 @@ p.hypnoDrone {
 }
 
 /* Dark palette; preserve the original game layout and visibility rules. */
-:root {
-    color-scheme: dark;
-    accent-color: #7ee0bf;
-}
-
 body {
-    margin: 16px;
-    background: #10141b;
-    color: #dbe2ed;
-    font: 14px/1.5 "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #111111;
+    color: #e6e6e6;
 }
 
 a {
-    color: #7ee0bf;
-    text-underline-offset: 3px;
+    color: #8fd6ff;
 }
 
-a:hover {
-    color: #b1f1dc;
+#cover,
+#mobile {
+    background: #111111;
+    background-image: linear-gradient(#111111, #222222 50%);
+    color: #e6e6e6;
 }
 
-#cover {
-    background: #10141b;
-}
-
-#consoleDiv, #hypnoDroneEventDiv {
-    background: #080c12;
-    border-radius: 6px;
-}
-
-#consoleDiv {
-    box-sizing: border-box;
-    position: relative;
-    padding: 12px 230px 12px 10px;
-    border: 1px solid #303b4b;
-}
-
-p.console, p.consoleOld {
-    font-size: 12px;
-    line-height: 1.6;
-    overflow-wrap: anywhere;
-}
-
-p.console {
-    color: #7ee0bf;
-    margin-bottom: 0;
-}
-
-p.consoleOld {
-    color: #9caabd;
+#mobile-footer a {
+    color: #8fd6ff;
 }
 
 .shop {
-    top: 10px;
-    right: 10px;
-    background: #1c2632;
-    border: 1px solid #344454;
-    border-radius: 4px;
-    padding: 6px 10px;
-    font-size: 12px;
+    background-color: #4b4b1e;
+    color: #f5f5c8;
 }
 
-#topDiv {
-    clear: both;
-    padding: 10px 0;
+.toolTip .toolTipText,
+.toolTip2 .toolTipText2,
+.toolTip3 .toolTipText3 {
+    background-color: #333333;
+    color: #f0f0f0;
+}
+
+#consoleDiv,
+#hypnoDroneEventDiv,
+.battleStage,
+.battleStage2 {
+    background: #000000;
 }
 
 #prestigeDiv {
-    background: #1c2632;
-    color: #aebed1;
-    padding: 4px 8px;
-    border-radius: 4px;
+    background-color: #333333;
 }
 
-h2 {
-    color: #f0f5fc;
-    line-height: 1.4;
-}
-
-hr, table.table2 td {
-    border-color: #344454;
-}
-
-hr {
-    border-style: solid;
-    border-width: 1px 0 0;
-    margin: 4px 0 8px;
-}
-
-.engine, .engine2, .swarmEngine, .qEngine {
-    background: #171d26;
-    border-color: #344454;
-    border-radius: 4px;
-    padding: 7px;
-}
-
+.engine,
+.engine2,
+.swarmEngine,
 .qEngine {
-    height: auto;
-    min-height: 70px;
+    border-color: #444444;
 }
 
-button, select {
-    font-family: inherit;
-}
-
-.button, .button2, .projectButton {
-    background: #253340;
-    border: 1px solid #536b7b;
-    color: #e3edf7;
-    text-shadow: none;
-    box-shadow: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button2 {
-    padding: 3px 7px;
-    font-size: 12px;
-}
-
-.projectButton, .projectButton:hover, .projectButton:active {
-    height: auto;
-    min-height: 76px;
-    width: 275px;
-    padding: 8px;
-    line-height: 1.5;
-    overflow-wrap: anywhere;
-}
-
-.button:hover, .button2:hover, .projectButton:hover {
-    background: #304454;
-    border-color: #7ee0bf;
-    color: #f2f7fc;
-    text-shadow: none;
-}
-
-.button:active, .button2:active, .projectButton:active {
-    background: #1a3e37;
-    border-color: #7ee0bf;
-    color: #f2f7fc;
-    text-shadow: none;
-}
-
-.button:disabled, .button2:disabled, .projectButton:disabled {
-    background: #1c2430;
-    border: 1px solid #354151;
-    color: #9aa8ba;
-    opacity: 1;
-    cursor: default;
-}
-
-button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible {
-    outline: 2px solid #7ee0bf;
-    outline-offset: 3px;
-}
-
-select {
-    background: #1c2632;
-    border: 1px solid #536b7b;
-    color: #dbe2ed;
-    border-radius: 3px;
-    padding: 2px;
+.engineStage {
+    background-color: #000000;
 }
 
 table.table1 tr:nth-child(even) {
-    background: #232e3c;
+    background-color: #2a2a2a;
 }
 
-table.table1, table.table2, table.table3, p.clean, p.clean2, p.clean3, .toolTip2 .toolTipText2 {
-    font-size: 12px;
-    font-family: inherit;
+table.table2 td {
+    border-color: #555555;
 }
 
-.toolTip .toolTipText, .toolTip2 .toolTipText2, .toolTip3 .toolTipText3 {
-    background: #263746;
-    border: 1px solid #536b7b;
-    color: #edf4fc;
-    padding: 6px;
+hr {
+    border-color: #555555;
 }
 
 canvas {
-    background: #121923;
-    border: 1px solid #344454;
-    border-radius: 4px;
+    background-color: #2a2a2a;
 }
 
-#battleInterfaceDiv {
-    color: #edf4fc;
+.projectButton,
+.projectButton:hover,
+.projectButton:active {
+    background: #333333;
+    border-color: #666666;
 }
 
-#mobile {
-    background: #10141b;
-    color: #dbe2ed;
-}
-
-#mobile-title h1 {
-    padding-top: 20vh;
-    margin-top: 0;
-    text-align: center;
-    color: #7ee0bf;
-}
-
-#mobile-badges a {
-    display: block;
-    text-align: center;
-    padding: 12px;
-    margin-bottom: 12px;
-    background: #253340;
-    border: 1px solid #536b7b;
-    border-radius: 4px;
-}
-
-@media only screen and (max-width: 700px) {
-    body {
-        margin: 0;
-    }
+.button,
+.button2,
+.button:hover,
+.button2:hover,
+.button:active,
+.button2:active {
+    background: #333333;
+    border-color: #666666;
+    color: #f0f0f0;
+    text-shadow: #111111 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 0, inset rgba(255, 255, 255, 0.08) 0 1px 0;
 }
 
