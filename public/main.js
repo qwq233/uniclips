@@ -4986,6 +4986,21 @@ for(var i=0; i < activeProjects.length; i++){
     
 }
 
+function exportSave() {
+    save();
+    var saveExport = {};
+    var saveKeys = ["saveGame","saveProjectsUses","saveProjectsFlags","saveProjectsActive","saveStratsActive","savePrestige"];
+    for (var i=0; i < saveKeys.length; i++){
+        var value = localStorage.getItem(saveKeys[i]);
+        if (value != null) saveExport[saveKeys[i]] = value;
+    }
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(new Blob([JSON.stringify(saveExport, null, 2)], {type: "application/json"}));
+    link.download = "universal-paperclips-save.json";
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
+
 function save1() {
     
     var projectsUses = [];

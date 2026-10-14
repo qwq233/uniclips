@@ -963,6 +963,10 @@ a {
     background-color: #000000;
 }
 
+.qChip {
+    background-color: #e6e6e6;
+}
+
 table.table1 tr:nth-child(even) {
     background-color: #2a2a2a;
 }
