@@ -830,7 +830,7 @@ function quantumCompute(){
     qClock = qClock+.01;
     for (var i = 0; i<qChips.length; i++){
         qChips[i].value = Math.sin(qClock*qChips[i].waveSeed*qChips[i].active);
-        qChipsElements[i].style.opacity=qChips[i].value; 
+        qChipsElements[i].style.opacity=.3+(Math.abs(qChips[i].value)*.7); 
     }
 }
 

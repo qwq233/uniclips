@@ -964,7 +964,15 @@ a {
 }
 
 .qChip {
-    background-color: #e6e6e6;
+    background-color: #22d3ee;
+    border: 1px solid #f8fafc;
+    box-sizing: border-box;
+}
+
+#btnExportSave {
+    display: block;
+    clear: both;
+    margin-bottom: 6px;
 }
 
 table.table1 tr:nth-child(even) {
